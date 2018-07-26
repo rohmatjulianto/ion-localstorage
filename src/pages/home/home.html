@@ -1,14 +1,17 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar hideBackButton>
     <ion-title>
-      Ionic Blank
+      Welcome
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-list>
+  <ion-item>
+   Hello.. {{username}}
+  </ion-item>
+  <ion-item>Your logged on :<p>{{date}}</p></ion-item>
+</ion-list>
+<button ion-button color="danger" block (click)="logout()">Log Out</button>
 </ion-content>
